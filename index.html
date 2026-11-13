@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHEZ ALY - Boutique en ligne</title>
+
+    <!-- IMPORTATION DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- LIAISON AVEC LE FICHIER CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#accueil">
+                    CHEZ ALY
+                </a>
+
+                <!-- MENU MOBILE -->
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNavigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- LIENS DE NAVIGATION -->
+                <div class="collapse navbar-collapse" id="menuNavigation">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accueil">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produits">Produits</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#apropos">À propos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil" class="hero">
+
+        <div class="container text-center">
+
+            <h1>Bienvenue chez CHEZ ALY</h1>
+
+            <p>
+                Découvrez notre sélection de produits
+                tendance aux meilleurs prix.
+            </p>
+
+            <a href="#produits" class="btn btn-primary">
+                Découvrir nos produits
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION PRODUITS -->
+    <section id="produits" class="products py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-2">Nos produits</h2>
+
+            <p class="text-center text-muted mb-5">
+                Découvrez nos meilleures ventes.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- PRODUIT CHAUSSURES -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card h-100">
+
+                        <img src="images/Chaussures  Nike.png"
+                            class="card-img-top"
+                            alt="Chaussures de sport">
+
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">Chaussures Nike</h5>
+
+                            <p class="card-text">
+                                Des chaussures confortables
+                                pour toutes vos activités.
+                            </p>
+
+                            <p class="price">35 000 FCFA</p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Acheter maintenant
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUIT MONTRE -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card h-100">
+
+                        <img src="images/Montre élegante.png"
+                            class="card-img-top"
+                            alt="Montre élégante">
+
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">Montre élégante</h5>
+
+                            <p class="card-text">
+                                Une montre moderne pour
+                                compléter votre style.
+                            </p>
+
+                            <p class="price">25 000 FCFA</p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Acheter maintenant
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUIT CASQUE AUDIO -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card h-100">
+
+                        <img src="images/Casque Audio.png"
+                            class="card-img-top"
+                            alt="Casque audio">
+
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">Casque audio</h5>
+
+                            <p class="card-text">
+                                Profitez d'un son de qualité
+                                avec notre casque audio.
+                            </p>
+
+                            <p class="price">18 000 FCFA</p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Acheter maintenant
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUIT SAC À MAIN -->
+                <div class="col-12 col-sm-6 col-lg-3">
+
+                    <div class="card product-card h-100">
+
+                        <img src="images/Sac à main.png"
+                            class="card-img-top"
+                            alt="Sac à main">
+
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title">Sac à main</h5>
+
+                            <p class="card-text">
+                                Un sac chic et pratique
+                                pour votre quotidien.
+                            </p>
+
+                            <p class="price">22 000 FCFA</p>
+
+                            <a href="#contact" class="btn btn-primary">
+                                Acheter maintenant
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="apropos" class="about py-5">
+
+        <div class="container text-center">
+
+            <h2>À propos de CHEZ ALY</h2>
+
+            <p>
+                CHEZ ALY est une boutique en ligne qui vous propose
+                des produits de qualité, accessibles et tendance.
+                Notre objectif est de satisfaire tous nos clients.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer id="contact" class="footer text-center">
+
+        <div class="container">
+
+            <h4>CHEZ ALY</h4>
+
+            <p>Votre satisfaction, notre priorité.</p>
+
+            <p>Email : contact@chezaly.com</p>
+
+            <p>Téléphone : +225 07 00 00 00 00</p>
+
+            <hr>
+
+            <p>
+                &copy; 2026 CHEZ ALY - Tous droits réservés.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- IMPORTATION DU JAVASCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

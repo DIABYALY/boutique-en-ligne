@@ -1,0 +1,248 @@
+/* STYLE GÉNÉRAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f7fc;
+    color: #333;
+}
+
+/* EN-TÊTE */
+header {
+    background: #24123f;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    color: #f5c76a !important;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #f5c76a !important;
+}
+
+/* SECTION ACCUEIL */
+.hero {
+    background: linear-gradient(
+        135deg,
+        #24123f,
+        #59318a,
+        #9b65b5
+    );
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: #f1eaf8;
+}
+
+.hero .btn {
+    background: #f5c76a;
+    color: #24123f;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: white;
+    color: #24123f;
+    transform: translateY(-4px);
+}
+
+/* SECTION PRODUITS */
+.products {
+    padding: 80px 0 !important;
+}
+
+.products h2 {
+    color: #24123f;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.products .text-muted {
+    font-size: 16px;
+}
+
+/* CARTES PRODUITS */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 5px 20px rgba(36, 18, 63, 0.08);
+    transition: 0.4s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(36, 18, 63, 0.18);
+}
+
+.product-card img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card .card-body {
+    padding: 25px 15px;
+}
+
+.product-card .card-title {
+    color: #24123f;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card .card-text {
+    color: #777;
+    font-size: 14px;
+    min-height: 45px;
+}
+
+.price {
+    color: #a66a16;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* BOUTONS DES PRODUITS */
+.product-card .btn {
+    background: #59318a;
+    border: none;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.product-card .btn:hover {
+    background: #f5c76a;
+    color: #24123f;
+    transform: scale(1.05);
+}
+
+/* SECTION À PROPOS */
+.about {
+    background: #eee8f5;
+    padding: 75px 20px !important;
+}
+
+.about h2 {
+    color: #24123f;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #62566e;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* PIED DE PAGE */
+.footer {
+    background: #24123f;
+    color: white;
+    padding: 45px 20px 20px;
+}
+
+.footer h4 {
+    color: #f5c76a;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 15px;
+    color: #e5ddef;
+    margin-bottom: 12px;
+}
+
+.footer hr {
+    border-color: #a88cbd;
+    margin: 25px 0;
+}
+
+/* ADAPTATION AUX TÉLÉPHONES */
+@media screen and (max-width: 768px) {
+
+    .hero {
+        padding: 85px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .products h2 {
+        font-size: 29px;
+    }
+
+    .about h2 {
+        font-size: 27px;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+}
